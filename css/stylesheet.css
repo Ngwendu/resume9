@@ -47,10 +47,11 @@ body {
 }
 .profilePicWrapper {
 	height: auto;
-	width: 250px;
+	width: 300px;
+	margin: 1rem;
 }
 .profilePic {
-	border-radius: 100%;
+	border-radius: 50%;
 	border: 1px solid white;
 }
 .profilePic:hover {
@@ -60,23 +61,7 @@ body {
 	box-shadow: 0 0 25px #ccc;
 	transition: ease-out 1.5s;
 }
-@media screen and (max-width: 992px) {
-	.profilePic {
-		margin-top: 20px;
-	}
-}
-/* ---------------------------------------------------------------- */
-/* DS: Added some styling to your footer */
-.icons {
-	width: 3rem;
-	height: auto;
-	margin: 2rem;
-}
-footer h3 {
-	padding: 20px;
-}
 
-/* ---------------------------------------------------------------- */
 #sidebar {
 	width: 15%;
 	background-color: rgb(56, 66, 39);
@@ -108,6 +93,21 @@ footer h3 {
 	text-align: center;
 	color: #fcf7f8;
 	padding: 1rem;
+	font-size: small;
+}
+
+.icons {
+	width: 3rem;
+	height: auto;
+	margin: 3rem;
+}
+
+@media screen and (max-width: 992px) {
+	.profilePic {
+		margin-top: 20px;
+		margin-bottom: 20px;
+		width: 200px;
+	}
 }
 
 @media screen and (max-width: 992px) {
@@ -145,6 +145,14 @@ footer h3 {
 		width: 3rem;
 		height: auto;
 		margin: 1rem;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.profilePic {
+		margin-top: 15px;
+		margin-bottom: 15px;
+		width: 200px;
 	}
 }
 
@@ -187,6 +195,14 @@ footer h3 {
 }
 
 @media screen and (max-width: 550px) {
+	.profilePic {
+		margin-top: 10px;
+		margin-bottom: 10px;
+		width: 150px;
+	}
+}
+
+@media screen and (max-width: 550px) {
 	#heading {
 		font-size: 50%;
 	}
@@ -194,7 +210,7 @@ footer h3 {
 
 @media screen and (max-width: 550px) {
 	#sidebar {
-		padding: 0.5rem;
+		padding: 0.4rem;
 		font-size: 50%;
 	}
 }
@@ -212,7 +228,7 @@ footer h3 {
 @media screen and (max-width: 550px) {
 	.footer {
 		padding: 0.5rem;
-		font-size: 50%;
+		font-size: 20%;
 	}
 }
 
